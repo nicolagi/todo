@@ -122,7 +122,7 @@ func openTask(l *task.List, id string) {
 	open(&awin{
 		mode: modeSingle,
 		name: adir(l) + id,
-		tag:  "Get Put Done Look",
+		tag:  "Get Put Done Mute Look",
 	})
 }
 
@@ -131,7 +131,7 @@ func openAll(l *task.List) {
 		mode:  modeList,
 		name:  adir(l) + "all",
 		query: "all",
-		tag:   "New Get Bulk Sort Search",
+		tag:   "New Get Bulk Done Mute Sort Search",
 	})
 }
 
@@ -140,7 +140,7 @@ func openSearch(l *task.List, query string) {
 		mode:  modeList,
 		name:  adir(l) + "search",
 		query: query,
-		tag:   "New Get Bulk Sort Search",
+		tag:   "New Get Bulk Done Mute Sort Search",
 	})
 }
 
